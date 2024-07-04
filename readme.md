@@ -40,8 +40,6 @@ Po zakończeniu instalacji możesz przywrócić bezpieczne uprawnienia do pliku 
 ## Autor
 
 * **Szymon Pączyński** 
-* *nr  album: 406313*
-* *login z manticore'y: frixmix*
 
 ## Wykorzystane zewnętrzne biblioteki
 
