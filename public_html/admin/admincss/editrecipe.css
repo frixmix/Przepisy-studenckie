@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+body{
+    min-height: 100vh;
+}
+
+li{
+    list-style: none;
+}
+
+.side-bar{
+    position: fixed;
+    background: rgb(251, 158, 38, 0.8);
+    width: 20vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-bar .name{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-bar li{
+    font-size: 24px;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+}
+
+.side-bar li:hover{
+    background: rgb(251, 158, 38);
+}
+
+.side-bar li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.side-bar li.active{
+    background: rgb(251, 158, 38);
+}
+
+/* formularz edycji */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    margin-left: 20vw;
+    padding: 20px;
+}
+
+.edit-recipe {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edit-recipe h2 {
+    margin-bottom: 20px;
+}
+
+.edit-recipe-form .form-group {
+    margin-bottom: 15px;
+}
+
+.edit-recipe-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.edit-recipe-form .form-group input,
+.edit-recipe-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: none; /* Zablokowanie zmiany rozmiaru pól tekstowych */
+}
+

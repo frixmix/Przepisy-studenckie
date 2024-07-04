@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+  }
+  body{
+    min-height: 100vh;
+  }
+  li{
+    list-style: none;
+
+  }
+
+.side-bar{
+    position: fixed;
+    background: rgb(251, 158, 38, 0.8);
+    width: 20vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.side-bar .name{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.side-bar li{
+    
+    font-size: 24px;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+}
+.side-bar li:hover{
+    background: rgb(251, 158, 38);
+}
+
+/*użytkownik*/
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 500px;
+    background: #FAFAFA;
+    box-shadow: 0 0 25px rgb(251, 158, 38);
+    border-radius: 20px;
+    padding: 40px;
+  }
+  .form-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  h2{
+    font-weight: 500;
+    text-align: center;
+  }
+.input-group{
+    position: relative;
+    margin: 30px 0;
+    border-bottom: 2px solid #000;
+}
+.input-group label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.input-group input{
+    width: 320px;
+    height: 40px;
+    font-size: 16px;
+    padding: 0 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.input-group input:focus~label,
+.input-group input:valid~label{
+    top: -5px;
+}
+.remember{
+    margin: -5px 0 15px 5px;
+}
+.remember label{
+    font-size: 14px;
+}
+.remember label input{
+    accent-color: #FF7E26;
+
+}
+button{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: rgb(251, 158, 38);
+    box-shadow: 0 0 10px #d05604;
+    font-size: 14px;
+    color: #000;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+
+}
+.back{
+    font-size: 14px;
+    text-align: center;
+    margin: 15px 0;
+}
+.back p a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #FF7E26;
+}
+.back p a:hover{
+    text-decoration: underline;
+}
+.side-bar li a {
+    text-decoration: none;
+    color: #000;
+}
+.side-bar li.active{
+    background: rgb(251, 158, 38);
+}
+/*posty*/
+.content {
+    margin-left: 20vw;
+    padding: 20px;
+}
+
+.post-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.post-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.post-list li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+.post-list .edit-btn {
+    background: rgb(251, 158, 38);
+    color: #fff;
+    width: 100px;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+    margin-left: auto; /* Align the button to the right */
+    margin-right: 10px; /* Add margin to separate the button from the text */
+}
+
+.post-list .edit-btn:hover {
+    background: #d05604;
+}
+/*dashboard*/
+
+.dashboard-section {
+    margin-top: 0px;
+    text-transform: capitalize;
+    margin-left: 20vw;
+    padding: 20px;
+}
+
+.dashboard-box {
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    margin-top: 10px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-box ul {
+    list-style: none;
+    display: flex;
+}
+
+.dashboard-box ul li {
+    margin: 10px;
+    color: gray;
+    cursor: pointer;
+}
+
+.dashboard-box ul .active {
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.dashboard-box .dashboard-content {
+    display: flex;
+}
+
+.dashboard-content-box {
+    width: 33%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background: rgb(235, 233, 233);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-content-box p {
+    font-size: 24px;
+    margin-top: 5px;
+}
+.dashboard-content-box h3 {
+    font-size: 30px;
+    font-weight: 400;
+
+}
+
+.dashboard-content-box button {
+    background: #000;
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 10px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.dashboard-content-box button:hover {
+    background: rgba(0, 0, 0, 0.842);
+}
+
+.dashboard-content-box i {
+    font-size: 7rem;
+    float: right;
+    margin: -20px 20px 20px 0;
+}
+.fa-solid{
+    opacity: 0.5;
+}
+
+/* Dodaj styl dla przycisku Usuń */
+.delete-btn {
+    background: #e74c3c;
+    color: #fff;
+    width: 100px;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+    margin-left: 10px; /* Dodać margines między przyciskiem Edytuj a Usuń */
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+}
+
+
+.add-featured-btn {
+    display: inline-block;
+    background-color: rgb(251, 158, 38);
+    color: black;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: 1px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.2s ease;
+    margin: 10px 0; /* Dodanie marginesów góra-dół */
+  }
+  
+  .add-featured-btn:hover {
+    transform: scale(1.05);
+    color: #000;
+  }
+  
+  .add-featured-btn:active {
+    transform: scale(0.95);
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .add-featured-form {
+    max-width: 400px;
+    margin: 0;
+  }
+  
+/* tutaj do edituser.php */
+
+
+/* Zachowaj swoje stare style przycisków */
+.delete-btn {
+    background: #e74c3c; /* Czerwony kolor */
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.delete-btn:hover {
+    background: #c0392b; /* Ciemniejszy czerwony na hover */
+}
+
+.role-btn {
+    background: rgb(251, 158, 38);
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px; /* Odstęp między przyciskami */
+}
+
+.role-btn:hover {
+    background: #d05604;
+}
+
+/* Nowy styl dla kontenera przycisków */
+
